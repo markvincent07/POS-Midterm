@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (cashAmount >= totalAmount) {
             const change = cashAmount - totalAmount;
-            alert(`Payment successful! Change: ${change.toFixed(2)} PHP`);
+            alert(`Thanks for ordering! Change: ${change.toFixed(2)} PHP`);
             clearOrderedItems(); // Optionally clear ordered items after payment
             reloadPage();
             
         } else {
-            alert('Insufficient amount!');
+            alert('Not enough balance. Please try again!');
         }
     });
 
